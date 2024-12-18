@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #ebd4cb;
+      }
+      .league-script-regular {
+        font-family: "League Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .borel-regular {
+        font-family: "Borel", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              "slide-up": {
+                "0%": { opacity: "0", transform: "translateY(2rem)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              "slide-fade": {
+                "0%": { opacity: "1", transform: "translateY(0)" },
+                "100%": { opacity: "0", transform: "translateY(-2rem)" },
+              },
+            },
+            animation: {
+              "slide-up": "slide-up 0.5s forwards",
+              "slide-fade": "slide-fade 0.5s forwards",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="./animation.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Hey Cuteness! Scroll! -->
+    <section
+      class="w-screen h-screen grid place-items-center place-content-center"
+    >
+      <div class="text-center">
+        <div class="">Hey Baby!</div>
+        <div class="text-9xl flex flex-col">
+          <div class="flex justify-center items-center">
+            <!-- Each letter of "Happy Anniversary" -->
+            <div class="letter opacity-0 data-[active]:animate-slide-up">H</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">a</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">p</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">p</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">y</div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <div
+              class="letter opacity-0 data-[active]:animate-slide-up animate-slide-fade"
+            >
+              A
+            </div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">n</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">n</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">i</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">v</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">e</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">r</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">s</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">a</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">r</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">y</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">!</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">!</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Letter -->
+    <section
+      class="w-screen h-[150vh] grid justify-items-center relative text-xl borel-regular"
+    >
+      <div
+        id="card"
+        class="grid grid-cols-2 sticky bottom-1/2 rounded-sm w-[80%] h-max"
+      >
+        <div
+          style="transform-origin: right center"
+          id="pageOne"
+          class="border-solid border p-6 bg-white"
+        >
+          <div>Dear Babykusumm,</div>
+          <br />
+          <div>
+            Can you believe we've survived another year of me constantly gracing
+            you with my ayip seyler jokes and you rolling your eyes in the most
+            adorable way possible? Craaazy huh??! It's been 365 days of you
+            being the most incredible, beautiful, and patient woman on this
+            planet—and me doing my best not to mess it up too much. From all the
+            memories we spent together, all the heart breaking arguments we had,
+            all the flowers and gifts we exchanged, all the times we make fun of
+            each other, all the times we are being a silly goose, all the tears
+            that were shed when we get separated, all the dates we went (mostly
+            foodie dates hihiii), and unique places we travelled together,
+            you've made every single moment with you an adventure I never want
+            to end. You know, they say opposites attract, and it must be true
+            because you're all soooo cute, elegant, and just super duper
+            adorable (yiycemmm), and I'm… well, the guy in mismatched socks.
+          </div>
+        </div>
+        <div
+          style="transform-origin: left center"
+          id="pageTwo"
+          class="border-solid border p-6 bg-white"
+        >
+          <br />
+          <br />
+          <div>
+            You're the queen of fashion and style, and I'm just the guy who
+            looks like mas2 indo. But somehow, we work. And I think that's
+            because even when I annoy you and make you angry (which, let's be
+            honest, is very often), you still manage to look at me with that
+            sparkle in your eyes (or is that just you plotting my downfall?).
+            Either way, I'm super duper lucky to have you. So here's to another
+            year of love, laughter, and me trying to make you laugh with my ayip
+            jokes. I promise to keep doing my best to make you smile, hold your
+            hand, and remind you every single day how much you mean to me. Love
+            you to Turkey (it's actually turkiye) and back.
+          </div>
+          <br />
+          <div>Your Babykusumm,</div>
+          <br />
+          <div>
+            P.S. Thanks for not strangling me when I tell ayip jokes. You're the
+            real MVP. 💕
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- And Now.. Our memories -->
+    <section
+      class="w-screen grid min-h-[100vh] place-items-center place-content-center"
+    >
+      <div class="text-center">
+        <div class="text-9xl flex flex-col">
+          <div class="flex justify-center items-center gap-4">
+            <div class="flex">
+              <div class="letter opacity-0 data-[active]:animate-slide-up">
+                A
+              </div>
+              <div class="letter opacity-0 data-[active]:animate-slide-up">
+                n
+              </div>
+              <div class="letter opacity-0 data-[active]:animate-slide-up">
+                d
+              </div>
+            </div>
+            <div class="flex">
+              <div
+                class="letter opacity-0 data-[active]:animate-slide-up animate-slide-fade"
+              >
+                N
+              </div>
+              <div class="letter opacity-0 data-[active]:animate-slide-up">
+                o
+              </div>
+              <div class="letter opacity-0 data-[active]:animate-slide-up">
+                w
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <div
+              class="letter opacity-0 data-[active]:animate-slide-up animate-slide-fade"
+            >
+              O
+            </div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">u</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">r</div>
+            <div></div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">M</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">e</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">m</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">o</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">r</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">i</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">e</div>
+            <div class="letter opacity-0 data-[active]:animate-slide-up">s</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Photo Galleries -->
+    <section
+      id="photoGallery"
+      class="w-screen overflow-hidden h-screen grid isolate place-items-center [&_img]:absolute [&_img]:min-w-[12rem] relative"
+    >
+      <audio id="audio">
+        <source
+          src="./assets/Ed Sheeran - Perfect (Official Music Video).mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+
+      <div
+        class="flex justify-center z-30 text-8xl items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <div class="letter opacity-0 data-[active]:animate-slide-up">I</div>
+        <div class="w-4"></div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">L</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">o</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">v</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">e</div>
+        <div class="w-4"></div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">Y</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">o</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">u</div>
+        <div class="w-4"></div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">S</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">o</div>
+        <div class="w-4"></div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">M</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">u</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">c</div>
+        <div class="letter opacity-0 data-[active]:animate-slide-up">h</div>
+      </div>
+      <img
+        src="./assets/IMG_3115.webp"
+        class="rotate-90 w-[18rem] aspect-auto top-[2%] left-[2rem]"
+      />
+      <img
+        src="./assets/IMG_3568.webp"
+        class="top-[74%] left-[34%] rotate-180 w-[14rem]"
+      />
+      <img src="./assets/IMG_3575.webp" class="top-[3rem] right-[2rem] w-52" />
+      <img
+        src="./assets/IMG_3610.webp"
+        class="top-[62%] right-[14%] rotate-180 w-56"
+      />
+      <img
+        src="./assets/IMG_3611.webp"
+        class="top-[5%] left-[40%] rotate-180 w-16"
+      />
+      <img
+        src="./assets/IMG_3648.webp"
+        class="bottom-[12%] left-[2%] rotate-180 w-60"
+      />
+      <img
+        src="./assets/IMG_3945.webp"
+        class="top-[8rem] right-[25%] rotate-90 w-16"
+      />
+      <img
+        src="./assets/IMG_4155.webp"
+        class="bottom-[2%] right-[2%] rotate-90 w-16"
+      />
+      <img src="./assets/IMG_4158.webp" class="top-[20%] left-[26%] w-16" />
+      <img src="./assets/IMG_4163.webp" class="-bottom-[10%] left-[57%] w-16" />
+      <img
+        src="./assets/IMG_4213.webp"
+        class="bottom-[16%] left-[25%] w-24 !min-w-0"
+      />
+      <img src="./assets/IMG_4223.webp" class="bottom-[40%] left-[1%] w-16" />
+      <img src="/assets/IMG_4234.webp" class="bottom-[40%] right-[1%] w-16" />
+    </section>
+  </body>
+</html>
